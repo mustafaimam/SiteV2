@@ -59,3 +59,10 @@ body, html{
 	font-size:40pt;
 }
 
+#aboutme{
+	background-image:url("../img/section2.jpg");
+	width:100%;
+	height:100%;
+	color:white;
+}
+
