@@ -2,26 +2,35 @@
 <html>
 <head>
 	<title>Mustafa</title>
+	<!--Linking the style.css and main.js files-->
 	<link rel="stylesheet" href="css/style.css">
+	<script src="main.js"></script>
+	<!--Linking the font off of google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!--M icon for the thumbnail on the tab-->
 	<link rel="shortcut icon" href="img/letter-m.png" type="image/x-icon" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+	<!--The navigation bar - sits on top of the screen-->
 	<div class="navbar">
 		<a href="#headline">Home</a>
 		<a href="#section2">About Me</a>
 		<a href="resume.pdf" target="_blank">Resume</a>
-		<a>Photography</a>
-		<a>Contact</a>
+		<a href="#section3">Photography</a>
+		<a href="#section4">Contact</a>
 	</div>
 
+
 	<div class="wrapper">
+		<!--main top page-->
 		<div class="section" id="section1">
 			<div id="headline">
+				<!--text on the front-->
 				<h1 id="name">Mustafa Abdul Razaq</h1>
 				<h2 id="tagline">Programmer | Photographer</h2>
 				<div id="icons">
+					<!--icons under the main text-->
 					<a href="https://github.com/mustafaimam" target="_blank">
 						<img class="socialIcon" src="img/github-logo.png">
 					</a>	
@@ -41,9 +50,11 @@
 	<div class="wrapper">
 		<div class="section2" id="section2">
 			<div id="aboutme">
+				<!--Section 2 on the page, about me-->
 				<div id="about-box">
 					<h3>A little about me:</h3>
 					<p id="Paragraph1">I am a <em>computer science</em> student with a passion for photography and minimalistic designs. My interests include anything from problem solving to photography/videoagraphy. Talking to huge crowds of people and really being able to sell on an idea are some of my strong suits.<br><br>Feel free to browse my website a bit more to get to know about me.</p>
+					<!--Added an icon under the text linked to my resume-->
 					<a href="resume.pdf" target="_blank"><img class="resumeIcon" src="img/resume.png"</img></a>
 				</div>
 			</div>	
@@ -52,8 +63,11 @@
 
 	<div class="wrapper">
 		<div class="section3">
+		<!--Photography section - section 3-->
 		<h1 id="port-title">Photography</h1>
 			<div id="Photography">
+				<!--creatings divs for each of the images importing
+					will be done in css-->
 				<a><div class="port-img" id="img1"></div></a>
 				<a><div class="port-img" id="img2"></div></a>
 				<a><div class="port-img" id="img3"></div></a>
@@ -68,10 +82,12 @@
 	</div>	
 
 	<div class="wrapper">
+		<!--contact page - section 4-->
 		<div class="section4">
 		<h1 id="cont-title">Contact</h1>
 			<div id="Contact-me">
 				<div id="about-box">
+					<!--creating the table box for a fill in form-->
 					<input type="text" id="fname" name="firstname" placeholder="First Name">
 					<br>
 					<input type="text" id="lname" name="lastname" placeholder="Last Name">
