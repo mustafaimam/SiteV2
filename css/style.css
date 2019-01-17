@@ -31,7 +31,7 @@ body{
 
 .navbar{
 	overflow:hidden;
-	background-color:black;
+	background-color:rgba(0,0,0,0.6);
 	position:fixed;
 	top:0;
 	width:100%;
@@ -59,20 +59,50 @@ body{
 .section2{
 	height:100%;
 	width:100%;
-	padding-top:25px;
+	margin-top:20px;
 
 }
 
 .section3 {
-	background-color: #92B2B9;
+	background-image:url("../img/section3.jpg");
 	text-align: center;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-top: 40px;
+}
+
+.section4{
+	background-image:url("../img/contactBG.jpg");
+	text-align: center;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat :no-repeat;
+	background-size: cover;
+	margin-top:-15px;
+
+
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding:20px;
+	margin-top:10px;
+
+}
+
+#cont-title{
+	padding-top: 50px;
+	font-size: 40px;
+	color:white;
+	text-align:center;
+	text-shadow:1px 1px rgb(88,88,88);
 }
 
 #headline{
 	background-image:url("../img/bgImage.jpg");
 	width:100%;
-	height:600px;
-	margin-top: -30px;
+	height:auto;
+	margin-top: -80px;
 
 	text-align: center;
 
@@ -127,7 +157,8 @@ h3{
 .socialIcon{
 	width:55px;
 	height:auto;
-	transition: 0.3s
+	transition: 0.3s;
+	margin-bottom: 75px;
 }
 
 .socialIcon:hover{
@@ -147,9 +178,20 @@ h3{
 }
 
 #Photography{
-	/*background-image:url("../img/section3.jpg");*/
-	margin-top: 10px;
-	opacity:0.7;
+	width:100%;
+	height:100%;
+	text-align:center;
+
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+	margin-bottom: 25px;
+}
+
+#Contact-me{
+	background-image:url("img/contactBG.jpg");
+	margin-top:50px;
 	width:100%;
 	height:100%;
 	text-align:center;
@@ -157,11 +199,9 @@ h3{
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-
-	display: inline-flex;
-	flex-wrap: wrap;
+	padding:20px;
+	display: flex;
 	justify-content: center;
-	padding: 20px;
 }
 
 .port-img {
@@ -173,7 +213,11 @@ h3{
 }
 
 #port-title{
-	padding-top: 20px;
+	padding-top: 50px;
+	font-size: 40px;
+	color:white;
+	text-align:center;
+	text-shadow:1px 1px rgb(88,88,88);
 }
 
 p{
@@ -249,4 +293,43 @@ p{
 	background: rgba(39, 33, 35, 0.9);
 	padding: 15px;
 	border-radius: 10px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+input[type=text], select, textarea{
+	font-size: 30px;
+	width:100%
+	padding:12px;
+	border:2px solid #ccc;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom:5px;
+	resize:vertical;
+}
+
+input[type=submit]{
+	background-color:#907272;
+	color:white;
+	font-size: 26px;
+	margin-top:40px;
+	padding: 20px 40px;
+	margin-bottom:80px;
+	border:none;
+	border-radius:4px;
+	cursor:pointer;
+	transition: 0.3s;
+}
+
+input[type=submit]:hover{
+	background-color:white;
+	color:#907272;
+}
+
+#subject {
+	height: 200px;
+	width: 375px;
 }
