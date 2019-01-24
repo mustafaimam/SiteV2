@@ -1,7 +1,10 @@
 body, html{
+	/*resetting the margin and padding*/
 	margin:0;
 	padding:0;
+	/*main font for the whole page*/
 	font-family: 'Raleway', sans-serif;
+	scroll-behavior: smooth; 
 }
 
 html{
@@ -36,7 +39,7 @@ body{
 	top:0;
 	width:100%;
 }
-
+/*navigation bar on top of the screen*/
 .navbar a{
 	float:left;
 	display:block;
@@ -46,23 +49,69 @@ body{
 	text-decoration:none;
 }
 
+.navbar a:after,
+.navbar a:before{
+	transition:all .5s;
+}
+
+.navbar a:after{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	width:0%;
+	content:'.';
+	color:transparent;
+	background:#aaa;
+	height:1px;
+}
+
+.navbar a{
+	transition:all .8s;
+}
+
+.navbar a:after{
+	text-align:left;
+	content:'..';
+	margin:0;
+	opacity:0;
+}
+
+
+.navbar a:hover{
+	color: 000;
+	z-index: 1;
+}
+
+.navbar a:hover:after{
+	z-index= -5;
+	animation:fill 1s forwards;
+	-webkit-animation:fill 1s forwards;
+	-moz-animation:fill 1s forwards;
+	opacity:1;
+}
+
+/*effect if the cursor is moved of the navigation bar*/
 .navbar a:hover{
 	background:#6A5F53;
 	color:white;
 }
 
+/*general wrapper put around all divs*/
 .wrapper{
 	height:100%;
 	width:100%;
 }
 
+/*setting the image for section 2 on the page*/
 .section2{
 	height:100%;
 	width:100%;
 	margin-top:20px;
-
 }
 
+/*section 3 importing the image and setting it with parallax*/
 .section3 {
 	background-image:url("../img/section3.jpg");
 	text-align: center;
@@ -72,7 +121,7 @@ body{
 	background-size:cover;
 	margin-top: 40px;
 }
-
+/*Importing the image as section 4 and setting it with parallax*/
 .section4{
 	background-image:url("../img/contactBG.jpg");
 	text-align: center;
@@ -82,23 +131,15 @@ body{
 	background-size: cover;
 	margin-top:-15px;
 
-
+	/*adding a border radius for the round effect around corners*/
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding:20px;
 	margin-top:10px;
-
 }
-
-#cont-title{
-	padding-top: 50px;
-	font-size: 40px;
-	color:white;
-	text-align:center;
-	text-shadow:1px 1px rgb(88,88,88);
-}
-
 #headline{
+	/*importing the image and setting it as the home page,
+	itll be under the text*/
 	background-image:url("../img/bgImage.jpg");
 	width:100%;
 	height:auto;
@@ -112,8 +153,8 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 #name{
+	/*setting the font color and size and giving it a very light shadow*/
 	color:white;
 	text-shadow:1px 1px rgb(88,88,88);
 	padding-top:200px;
@@ -121,6 +162,7 @@ body{
 }
 
 #tagline{
+	/*tagline text under my name PROGRAMMER | PHOTOPGRAPHER*/
 	color:white;
 	text-shadow:1px 1px rgb(88,88,88);
 	padding-top:10px;
@@ -128,26 +170,36 @@ body{
 }
 
 #aboutme{
+	/*importing the image for the about me section*/
 	background-image:url("../img/section2.jpg");
 	margin-top: -10px;
 	margin-bottom: -30px;
 	width:100%;
 	height:600px;
 	text-align:center;
+	/*Parallax scorlling effect*/
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	/*adapts to different screen sizes*/
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 }
 
 h3{
+	/*A little bit about me, increasing the font*/
 	color:white;
 	font-size:25px;
 }
-
+#contact-title{
+	padding-top: 50px;
+	font-size: 40px;
+	color:white;
+	text-align:center;
+	text-shadow:1px 1px rgb(88,88,88);
+}
 #Paragraph1{
 	color:white;
 	text-shadow:1px 1px rgb(88,88,88);
@@ -211,6 +263,51 @@ h3{
 	background-size:cover;
 	transition:0.3s;
 }
+
+.port-img img1{
+	transition:all 0.2s linear;
+	width:300px;
+	height:200px;
+}
+
+.port-img .mask{
+	opacity:.5;
+	background-color: rgba(58, 1 ,132, 0.44);
+	transition: all 0.4s ease-in-out;
+}
+/*
+.port-img h2{
+	transform:translateY(-100px);
+	opacity:0;
+	transition:all 0.2s ease-in-out;
+}
+
+.port-img p{
+	transform: translateY(100px);
+	opacity:0;
+	transition: all 0.2s linear;
+}
+
+#port-title:hover img1{
+	transform: scale(1.1);
+}
+
+#port-title:hover .mask{
+	opacity:1;
+}
+
+#port-title:hover h2;
+#port-title:hover p;
+#port-title:hover a{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+#port-title: hover p{
+	transition-delay:0.1s;
+}
+
+*/
 
 #port-title{
 	padding-top: 50px;
@@ -289,8 +386,8 @@ p{
 }
 
 #about-box {
-	width: 600px;
-	background: rgba(39, 33, 35, 0.9);
+	width: 500px;
+	background: rgba(39, 33, 35, 0.5);
 	padding: 15px;
 	border-radius: 10px;
 }
@@ -332,4 +429,8 @@ input[type=submit]:hover{
 #subject {
 	height: 200px;
 	width: 375px;
+}
+
+button{
+	opacity:0.1;
 }
