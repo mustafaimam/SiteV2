@@ -5,11 +5,13 @@
 	<!--Linking the style.css and main.js files-->
 	<link rel="stylesheet" href="css/style.css">
 	<script src="main.js"></script>
+	<script src="contact.php"></script>
 	<!--Linking the font off of google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<!--M icon for the thumbnail on the tab-->
 	<link rel="shortcut icon" href="img/letter-m.png" type="image/x-icon" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 	<!--The navigation bar - sits on top of the screen-->
@@ -93,23 +95,24 @@
 		<h1 id="contact-title">Contact</h1>
 			<div id="Contact-me">
 				<div id="about-box">
-					<!--creating the table box for a fill in form-->
-					<input type="text" id="fname" name="firstname" placeholder="First Name">
-					<br>
-					<input type="text" id="lname" name="lastname" placeholder="Last Name">
-					<br>
-					<input type="text" id="email" name="email" placeholder="Email">
-					<br>
-					<input type="text" id="cellNum" name="cellNum" placeholder="Phone Number">
-					<br>
-					<textarea id="subject" name="subject" placeholder="Message"></textarea>
-					<br>
-					<br>
-					<input type="submit" value="Submit">
+					<form action="contact.php" method="POST">
+						<!--creating the table box for a fill in form-->
+						<input type="text" id="fname" name="fname" placeholder="Name">
+						<br>
+						<input type="text" id="lname" name="lname" placeholder="Last Name">
+						<br>
+						<input type="text" id="email" name="email" placeholder="Email">
+						<br>
+						<input type="text" id="phone" name="phone" placeholder="Phone Number">
+						<br>
+						<textarea id="subject" name="subject" placeholder="Message"></textarea>
+						<br>
+						<br>
+						<input type="submit" value="Submit">
+					</form>
 				</div>	
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>

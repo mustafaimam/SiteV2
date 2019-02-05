@@ -9,5 +9,3 @@ function myFunction() {
 function newFunction2(){ 
 document.getElementById("name").innerHTML = "Mustafa Abdul Razaq";
 }
-
-

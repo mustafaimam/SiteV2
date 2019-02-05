@@ -17,6 +17,13 @@ body{
 	min-height:100%;
 }
 
+img[src*="000webhost"],
+img[alt*="000webhost"],
+a[title*="000webhost"], 
+a[href*="000webhost"]{
+	display: none;
+}
+
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
@@ -113,7 +120,8 @@ body{
 
 /*section 3 importing the image and setting it with parallax*/
 .section3 {
-	background-image:url("../img/section3.jpg");
+
+	background-color:#dcdcdc;
 	text-align: center;
 	background-attachment:fixed;
 	background-position:center;
@@ -123,7 +131,7 @@ body{
 }
 /*Importing the image as section 4 and setting it with parallax*/
 .section4{
-	background-image:url("../img/contactBG.jpg");
+	background-image:url("../img/contactBGtemp.jpg");
 	text-align: center;
 	background-attachment: fixed;
 	background-position: center;
