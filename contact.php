@@ -1,11 +1,12 @@
 <?php
-  $fname= $_POST['fname'];
-  $lname= $_POST['lname'];
-  $email = $_POST['email'];
-  $cellNum = $_POST['phone'];
+  $firstName= $_POST['firstName'];
+  $lastName= $_POST['lastName'];
+  $emailAddress = $_POST['emailAddress'];
+  $phoneNum = $_POST['phoneNum'];
+  $recipient = "mustafa.abdul.razzaq@outlook.com";
   $subject = "Contact From Website";
-  $formContent = $_POST['formContent'];
-  $mailheader = "From: $email \r\n";
-  mail($recipient, $subject, $formContent, $mailheader) or  die ("Hmm that didn't work.");
-  echo "Thank You!" . " -" . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";  
+  $subjectEmail = $_POST['subjectEmail'];
+  $mailheader = "From: $emailAddress \r\n";
+  mail($recipient, $subject, $subjectEmail, $phoneNum) or  die ("Hmm that didn't work.");
+  echo "Thank You!" . " | " . "<a href='index.html' style='text-decoration:none;color:#49211f;'> Return Home</a>";  
 ?>

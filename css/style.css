@@ -405,8 +405,9 @@ p{
 }
 
 input[type=text], select, textarea{
-	font-size: 30px;
-	width:100%
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	width:100%;
 	padding:12px;
 	border:2px solid #ccc;
 	border-radius: 10px;
@@ -419,10 +420,9 @@ input[type=text], select, textarea{
 input[type=submit]{
 	background-color:#907272;
 	color:white;
-	font-size: 26px;
-	margin-top:40px;
-	padding: 20px 40px;
-	margin-bottom:80px;
+	font-size: 24px;
+	padding: 5px 15px 5px 15px;
+	margin-bottom: 10px;
 	border:none;
 	border-radius:4px;
 	cursor:pointer;
@@ -436,7 +436,7 @@ input[type=submit]:hover{
 
 #subject {
 	height: 200px;
-	width: 375px;
+	width: 470px;
 }
 
 button{
